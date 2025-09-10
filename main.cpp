@@ -1,3 +1,6 @@
+// COMSC-210 | Lab 5 | Mika Aquino
+// IDE used: Visual Studio 2022
+
 #include <iostream>
 using namespace std;
 
@@ -23,8 +26,8 @@ int main() {
 // Function swap() takes two int pointers as arguments and swaps the values they point to.
 // swap() also returns an integer for the sum of the values pointed to by the pointers.
 int swap(int* aPtr, int* bPtr) {
-    int temp = *aPtr; // temp is assigned with the value pointed to by aPtr
-    *aPtr = *bPtr; // aPtr now points to the value bPtr points to
-    *bPtr = temp; // bPtr now points to temp (which is is the value pointed to by aPtr)
+    int temp = *aPtr; // temp is assigned with the value pointed to by aPtr.
+    *aPtr = *bPtr; // aPtr now points to the value bPtr points to.
+    *bPtr = temp; // bPtr now points to temp (which is is the value that was pointed to by aPtr).
     return *aPtr + *bPtr;
 }
